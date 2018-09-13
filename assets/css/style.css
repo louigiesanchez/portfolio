@@ -1,0 +1,23 @@
+.navbar {
+	position: fixed;
+	top: 0;
+}
+
+
+footer {
+	position: fixed;
+	bottom: 0;
+}
+
+.fab {
+	color: black;
+}
+
+section .dummy{
+	min-height: 100vh;
+	background-color: gray;
+}
+
+.dummy {
+	height: 1000px;
+}
