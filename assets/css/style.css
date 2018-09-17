@@ -1,6 +1,13 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
 .navbar {
 	position: fixed;
 	top: 0;
+	background-color: gray;
 }
 
 
@@ -13,11 +20,62 @@ footer {
 	color: black;
 }
 
-section .dummy{
-	min-height: 100vh;
-	background-color: gray;
+.quotation {
+	font-style: italic;
+	text-align: justify;
 }
 
-.dummy {
-	height: 1000px;
+.tagline {
+	display: inline-block;
 }
+
+header {
+	background-color: blue;
+
+}
+
+section {
+	background-color: red;
+}
+
+footer {
+	background-color: yellow;
+}
+
+
+
+
+
+
+/****************/
+/*DESKTOP SCREEN*/
+/****************/
+
+
+@media only screen and (min-width: 767px) {
+	.navbar {
+		background-color: red;
+	}
+}
+
+/***************/
+/*TABLET SCREEN*/
+/***************/
+
+
+@media only screen and (min-width: 401px) and (max-width: 767px) {
+	.navbar {
+		background-color: green;
+	}
+}
+
+/***************/
+/*MOBILE SCREEN*/
+/***************/
+
+@media only screen and (max-width: 400px) {
+	.navbar {
+		background-color: blue;
+	}
+}
+
