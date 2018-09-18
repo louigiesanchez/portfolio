@@ -4,16 +4,23 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--colorscheme-dark:transparent;
+	/*--colorscheme-dark: #003300;*/
+	--colorscheme-light:#b3ffb3;
+}
+
 .navbar {
 	position: fixed;
 	top: 0;
-	background-color: gray;
+	background-color: var(--colorscheme-dark);
 }
 
 
 footer {
 	position: fixed;
 	bottom: 0;
+	background-color: var(--colorscheme-dark);
 }
 
 .fab {
@@ -25,25 +32,45 @@ footer {
 	text-align: justify;
 }
 
-.tagline {
+.tagline, {
 	display: inline-block;
 }
 
-header {
-	background-color: blue;
 
-}
 
-section {
-	background-color: red;
-}
-
-footer {
-	background-color: yellow;
+.background-image > img{
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	height: 100%;
+	width: 100%;
 }
 
 
 
+
+/******************/
+/*EXTRAWIDE SCREEN*/
+/******************/
+
+
+@media only screen and (min-width: 992px){
+/*	.navbar {
+		background-color: pink;
+	}*/
+
+	.window {
+		height: 58px;
+	}
+
+	#home-page, #portfolio-page, #projects-page, #contacts-page {
+		height: calc(100vh - 48px - 58px);
+	}
+
+	#footer, .footer-window {
+		height: 48px;
+	}
+}
 
 
 
@@ -52,9 +79,21 @@ footer {
 /****************/
 
 
-@media only screen and (min-width: 767px) {
-	.navbar {
+@media only screen and (min-width: 767px) and (max-width: 991px){
+/*	.navbar {
 		background-color: red;
+	}*/
+
+	.window {
+		height: 66px;
+	}
+
+	#home-page, #portfolio-page, #projects-page, #contacts-page {
+		height: calc(100vh - 48px - 66px);
+	}
+
+	#footer, .footer-window {
+		height: 48px;
 	}
 }
 
@@ -64,9 +103,22 @@ footer {
 
 
 @media only screen and (min-width: 401px) and (max-width: 767px) {
-	.navbar {
+/*	.navbar {
 		background-color: green;
 	}
+*/
+	.window {
+		height: 56px;
+	}
+
+	#home-page, #portfolio-page, #projects-page, #contacts-page  {
+		height: calc(100vh - 96px - 56px);
+	}
+
+	#footer, .footer-window {
+		height: 96px;
+	}
+
 }
 
 /***************/
@@ -74,8 +126,21 @@ footer {
 /***************/
 
 @media only screen and (max-width: 400px) {
-	.navbar {
+/*	.navbar {
 		background-color: blue;
+		height: 10vh;
+	}*/
+
+	.window {
+		height: 56px;
+	}
+
+	#home-page, #portfolio-page, #projects-page, #contacts-page {
+		height: calc(100vh - 96px - 56px);
+	}
+
+	#footer, .footer-window {
+		height: 96px;
 	}
 }
 
