@@ -5,22 +5,38 @@
 }
 
 :root {
-	--colorscheme-dark:transparent;
-	/*--colorscheme-dark: #003300;*/
-	--colorscheme-light:#b3ffb3;
+	--colorscheme-transparent:transparent;
+	--colorscheme1: #003300; /*dark-green*/
+	--colorscheme2: #ebfaeb; /*light-green*/
+
+/*	font-family: 'Cabin Sketch', cursive;
+	font-family: 'Great Vibes', cursive;
+	font-family: 'Teko', sans-serif;*/
+}
+
+
+
+.jumbotron {
+	opacity: 0.95;
+	width: 80%;
+	margin: 0 auto;
+	background-color: var(--colorscheme2);
 }
 
 .navbar {
 	position: fixed;
 	top: 0;
-	background-color: var(--colorscheme-dark);
+	background-color: var(--colorscheme1);
+	z-index: 10;
+	opacity: 0.95;
 }
-
 
 footer {
 	position: fixed;
 	bottom: 0;
-	background-color: var(--colorscheme-dark);
+	background-color: var(--colorscheme1);
+	z-index: 10;
+	opacity: 0.95;
 }
 
 .fab {
@@ -32,22 +48,37 @@ footer {
 	text-align: justify;
 }
 
-.tagline, {
+.tagline {
 	display: inline-block;
 }
 
-
+.navbar-toggler{
+	background-color: var(--colorscheme1);
+	border-width: 4px;
+}
 
 .background-image > img{
 	position: fixed;
-	z-index: -1;
+	z-index: -10;
 	top: 0;
 	height: 100%;
 	width: 100%;
 }
 
+.btn {
+	background-color: var(--colorscheme-transparent);
+	margin: 0;
+	padding: 0;
+}
 
+.social-link .fab {
+	color: gray;
+	margin: 0 5px;
+}
 
+.social-container {
+	margin: 0 auto;
+}
 
 /******************/
 /*EXTRAWIDE SCREEN*/
@@ -64,7 +95,7 @@ footer {
 	}
 
 	#home-page, #portfolio-page, #projects-page, #contacts-page {
-		height: calc(100vh - 48px - 58px);
+		min-height: calc(100vh - 48px - 58px);
 	}
 
 	#footer, .footer-window {
@@ -89,7 +120,7 @@ footer {
 	}
 
 	#home-page, #portfolio-page, #projects-page, #contacts-page {
-		height: calc(100vh - 48px - 66px);
+		min-height: calc(100vh - 48px - 66px);
 	}
 
 	#footer, .footer-window {
@@ -112,11 +143,11 @@ footer {
 	}
 
 	#home-page, #portfolio-page, #projects-page, #contacts-page  {
-		height: calc(100vh - 96px - 56px);
+		min-height: calc(100vh - 48px - 56px);
 	}
 
 	#footer, .footer-window {
-		height: 96px;
+		height: 48px;
 	}
 
 }
@@ -128,7 +159,6 @@ footer {
 @media only screen and (max-width: 400px) {
 /*	.navbar {
 		background-color: blue;
-		height: 10vh;
 	}*/
 
 	.window {
@@ -136,11 +166,11 @@ footer {
 	}
 
 	#home-page, #portfolio-page, #projects-page, #contacts-page {
-		height: calc(100vh - 96px - 56px);
+		min-height: calc(100vh - 48px - 56px);
 	}
 
 	#footer, .footer-window {
-		height: 96px;
+		height: 48px;
 	}
 }
 
