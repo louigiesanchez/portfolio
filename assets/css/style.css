@@ -80,6 +80,11 @@ footer {
 	margin: 0 auto;
 }
 
+.capstone1-link {
+	height: 100%;
+	background-image: radial-gradient(white, black);
+}
+
 /******************/
 /*EXTRAWIDE SCREEN*/
 /******************/
