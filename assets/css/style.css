@@ -92,7 +92,8 @@ footer {
 }
 
 .capstone2-link {
-	background-image: radial-gradient(green, black);
+	background-image: url(../images/capstone1.png);
+	/*background-image: radial-gradient(green, black);*/
 	background-repeat: no-repeat;
 	background-position: center;
 	/*background-size: cover;*/
@@ -104,7 +105,8 @@ footer {
 
 
 .capstone3-link {
-	background-image: radial-gradient(green, black);
+	background-image: url(../images/capstone1.png);
+	/*background-image: radial-gradient(green, black);*/
 	background-repeat: no-repeat;
 	background-position: center;
 	/*background-size: cover;*/
